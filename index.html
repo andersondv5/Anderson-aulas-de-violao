@@ -483,161 +483,154 @@
         </div>
     </section>
 
-    <!-- Plans Section -->
-    <section id="planos" class="section-padding bg-gray-50">
-        <div class="fade-in container mx-auto px-6">
-            <div class="max-w-6xl mx-auto">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Planos de Aula</h2>
-                    <p class="text-lg text-gray-600">Escolha o plano ideal para sua jornada musical</p>
+    <!-- Plans Section - VERSÃO CORRIGIDA -->
+<section id="planos" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Planos de Aula</h2>
+                <p class="text-lg text-gray-600">Escolha o plano ideal para sua jornada musical</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Plano Básico -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Essencial</h3>
+                        <div class="flex items-baseline justify-center">
+                            <span class="text-4xl font-bold text-gray-900">R$ 100</span>
+                            <span class="text-gray-600 ml-2">/mês</span>
+                        </div>
+                    </div>
+
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                            <span>2 aulas por mês</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                            <span>Playlist de exercícios básicos</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                            <span>Online ou Presencial</span>
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i data-lucide="x" class="w-5 h-5 text-gray-400 mr-3"></i>
+                            <span>Suporte entre aulas</span>
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i data-lucide="x" class="w-5 h-5 text-gray-400 mr-3"></i>
+                            <span>Correção por áudio/vídeo</span>
+                        </li>
+                    </ul>
+
+                    <a href="https://wa.me/558398363906?text=Oi%20Anderson!%20Tudo%20bem?%20Tenho%20interesse%20no%20Plano%20Essencial%20de%20R$100/mês%20(2%20aulas%20por%20mês).%20Pode%20me%20explicar%20como%20funciona?"
+                       target="_blank"
+                       class="block w-full bg-gray-800 text-white py-3 rounded-lg hover:bg-gray-900 transition-colors font-medium text-center">
+                        Escolher Plano
+                    </a>
                 </div>
 
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                    <!-- Plano Básico -->
-                    <div class="plan-card rounded-2xl p-8 fade-in">
-                        <div class="text-center mb-6">
-                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Essencial</h3>
-                            <div class="flex items-baseline justify-center">
-                                <span class="text-4xl font-bold text-gray-900">R$ 100</span>
-                                <span class="text-gray-600 ml-2">/mês</span>
-                            </div>
+                <!-- Plano Intermediário -->
+                <div class="bg-white rounded-2xl p-8 shadow-xl border-2 border-red-500 relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <div class="bg-red-500 text-white px-4 py-1 rounded-full text-sm font-medium">
+                            Mais Procurado
                         </div>
-
-                        <ul class="space-y-4 mb-8">
-                            <li class="flex items-center">
-                                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
-                                <span>2 aulas por mês</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
-                                <span>Playlist de exercícios básicos</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
-                                <span>Online ou Presencial</span>
-                            </li>
-                            <li class="flex items-center text-gray-400">
-                                <i data-lucide="x" class="w-5 h-5 mr-3"></i>
-                                <span>Suporte entre aulas</span>
-                            </li>
-                            <li class="flex items-center text-gray-400">
-                                <i data-lucide="x" class="w-5 h-5 mr-3"></i>
-                                <span>Correção por áudio/vídeo</span>
-                            </li>
-                        </ul>
-
-                        <a href="https://wa.me/558398363906?text=Oi%20Anderson!%20Tudo%20bem?%20Tenho%20interesse%20no%20Plano%20Essencial%20de%20R$100/mês%20(2%20aulas%20por%20mês).%20Pode%20me%20explicar%20como%20funciona?"
-                            target="_blank">
-                            <button
-                                class="w-full bg-gray-800 text-white py-3 rounded-lg hover:bg-gray-900 transition-colors font-medium">
-                                Escolher Plano
-                            </button>
-                        </a>
+                    </div>
+                    
+                    <div class="text-center mb-6 pt-4">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Completo</h3>
+                        <div class="flex items-baseline justify-center">
+                            <span class="text-4xl font-bold text-gray-900">R$ 180</span>
+                            <span class="text-gray-600 ml-2">/mês</span>
+                        </div>
                     </div>
 
-                    <!-- Plano Intermediário -->
-                    <div class="plan-card featured rounded-2xl p-8 fade-in">
-                        <div class="text-center mb-6">
-                            <div
-                                class="inline-block bg-red-500 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
-                                Mais Procurado
-                            </div>
-                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Completo</h3>
-                            <div class="flex items-baseline justify-center">
-                                <span class="text-4xl font-bold text-gray-900">R$ 180</span>
-                                <span class="text-gray-600 ml-2">/mês</span>
-                            </div>
-                        </div>
-
-                        <ul class="space-y-4 mb-8">
-                            <li class="flex items-center">
-                                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
-                                <span>4 aulas por mês</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
-                                <span>Suporte por WhatsApp entre aulas</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
-                                <span>Online ou Presencial</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
-                                <span>Playlist personalizada + metas</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
-                                <span>Correção de técnica por áudio</span>
-                            </li>
-                        </ul>
-                        <a href="https://wa.me/558398363906?text=Oi%20Anderson!%20Tudo%20bem?%20Vi%20o%20Plano%20Completo%20(R$180/mês)%20no%20seu%20site%20e%20quero%20saber%20mais%20sobre%20as%204%20aulas%20mensais%20e%20o%20suporte%20por%20WhatsApp."
-                            target="_blank">
-                            <button
-                                class="w-full bg-red-600 text-white py-3 rounded-lg hover:bg-red-700 transition-colors font-medium">
-                                Escolher Plano
-                            </button>
-                        </a>
-                    </div>
-
-                    <!-- Plano Avançado -->
-                    <div class="plan-card rounded-2xl p-8 fade-in">
-                        <div class="text-center mb-6">
-                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Premium</h3>
-                            <div class="flex items-baseline justify-center">
-                                <span class="text-4xl font-bold text-gray-900">R$ 260</span>
-                                <span class="text-gray-600 ml-2">/mês</span>
-                            </div>
-                        </div>
-
-                        <ul class="space-y-4 mb-8">
-                            <li class="flex items-center">
-                                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
-                                <span>8 aulas por mês</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
-                                <span>Suporte ilimitado por WhatsApp</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
-                                <span>Online ou Presencial</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
-                                <span>Plano de estudos personalizado</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
-                                <span>Feedback detalhado/pesonalizado</span>
-                            </li>
-                        </ul>
-
-                        <a href="https://wa.me/558398363906?text=Oi%20Anderson!%20Vi%20seu%20Plano%20Premium%20(R$260/mês)%20e%20achei%20perfeito!%20Quero%20saber%20como%20funcionam%20as%208%20aulas%20e%20o%20plano%20de%20estudos%20personalizado."
-                            target="_blank">
-                            <button
-                                class="w-full bg-gray-800 text-white py-3 rounded-lg hover:bg-gray-900 transition-colors font-medium">
-                                Escolher Plano
-                            </button>
-                        </a>
-                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                            <span>4 aulas por mês</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                            <span>Suporte por WhatsApp entre aulas</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                            <span>Online ou Presencial</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                            <span>Playlist personalizada + metas</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                            <span>Correção de técnica por áudio</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="https://wa.me/558398363906?text=Oi%20Anderson!%20Tudo%20bem?%20Vi%20o%20Plano%20Completo%20(R$180/mês)%20no%20seu%20site%20e%20quero%20saber%20mais%20sobre%20as%204%20aulas%20mensais%20e%20o%20suporte%20por%20WhatsApp."
+                       target="_blank"
+                       class="block w-full bg-red-600 text-white py-3 rounded-lg hover:bg-red-700 transition-colors font-medium text-center">
+                        Escolher Plano
+                    </a>
                 </div>
 
-                <div class="text-center mt-12 fade-in">
-                    <p class="text-gray-600 mb-4">💫 <strong>Aula experimental</strong> para conhecer o método
-                    </p>
-                    <a href="https://wa.me/558398363906?text=Olá%20Professor%20Anderson!%20Gostaria%20de%20agendar%20uma%20aula."
-                        target="_blank">
-                        <button
-                            class="border border-red-600 text-red-600 px-8 py-3 rounded-lg hover:bg-red-600 hover:text-white transition-all font-medium">
-                            Agendar Aula
-                        </button>
+                <!-- Plano Avançado -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Premium</h3>
+                        <div class="flex items-baseline justify-center">
+                            <span class="text-4xl font-bold text-gray-900">R$ 260</span>
+                            <span class="text-gray-600 ml-2">/mês</span>
+                        </div>
+                    </div>
+
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                            <span>8 aulas por mês</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                            <span>Suporte ilimitado por WhatsApp</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                            <span>Online ou Presencial</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                            <span>Plano de estudos personalizado</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                            <span>Feedback detalhado/personalizado</span>
+                        </li>
+                    </ul>
+
+                    <a href="https://wa.me/558398363906?text=Oi%20Anderson!%20Vi%20seu%20Plano%20Premium%20(R$260/mês)%20e%20achei%20perfeito!%20Quero%20saber%20como%20funcionam%20as%208%20aulas%20e%20o%20plano%20de%20estudos%20personalizado."
+                       target="_blank"
+                       class="block w-full bg-gray-800 text-white py-3 rounded-lg hover:bg-gray-900 transition-colors font-medium text-center">
+                        Escolher Plano
                     </a>
                 </div>
             </div>
-        </div>
-    </section>
 
+            <div class="text-center mt-12">
+                <p class="text-gray-600 mb-4">💫 <strong>Aula experimental</strong> para conhecer o método</p>
+                <a href="https://wa.me/558398363906?text=Olá%20Professor%20Anderson!%20Gostaria%20de%20agendar%20uma%20aula."
+                   target="_blank"
+                   class="inline-block border border-red-600 text-red-600 px-8 py-3 rounded-lg hover:bg-red-600 hover:text-white transition-all font-medium">
+                    Agendar Aula
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
     <!-- FAQ Section -->
     <section id="faq" class="fade-in section-padding bg-white">
         <div class="container mx-auto px-6 max-w-5xl">

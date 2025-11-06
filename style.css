@@ -1,0 +1,71 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    color: #1f2937;
+}
+
+*{
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
+.section-padding {
+    padding: 5rem 0;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s, transform 0.6s;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, #dc2626 0%, #ea580c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.plan-card {
+    background: linear-gradient(135deg, #ffffff 0%, #fef2f2 100%);
+    border: 1px solid #fecaca;
+    transition: all 0.3s ease;
+}
+
+.plan-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(220, 38, 38, 0.1), 0 10px 10px -5px rgba(220, 38, 38, 0.04);
+}
+
+.plan-card.featured {
+    border-color: #dc2626;
+    background: linear-gradient(135deg, #fef2f2 0%, #fed7d7 100%);
+}
+
+.teacher-photo {
+    background: linear-gradient(135deg, #dc2626 0%, #ea580c 100%);
+    border-radius: 2rem;
+    padding: 0.5rem;
+}
+
+.teacher-photo img {
+    border-radius: 1.5rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Menu Mobile */
+.mobile-menu {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.mobile-menu.open {
+    transform: translateX(0);
+}

@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anderson - Professor de Violão | Aprenda do Zero no Seu Ritmo</title>
+
+    <!-- Meta Tags SEO -->
+    <meta name="description"
+        content="Aprenda violão do zero com Professor Anderson. Aulas online e presenciais em Patos-PB. Método prático para todas as idades. Agende sua aula experimental!">
+    <meta name="keywords"
+        content="aulas de violão, professor de violão, aprender violão, violão para iniciantes, aulas de música, violão online, violão em Patos-PB, Anderson professor violão">
+    <meta name="author" content="Anderson - Professor de Violão">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://andersonviolao.com/">
+    <meta property="og:title" content="Anderson - Professor de Violão | Aprenda do Zero no Seu Ritmo">
+    <meta property="og:description"
+        content="Aulas de violão online e presenciais em Patos-PB. Método prático para todas as idades. Agende sua aula experimental!">
+    <meta property="og:image" content="https://andersonviolao.com/img/image-perfil.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://andersonviolao.com/">
+    <meta property="twitter:title" content="Anderson - Professor de Violão | Aprenda do Zero no Seu Ritmo">
+    <meta property="twitter:description"
+        content="Aulas de violão online e presenciais em Patos-PB. Método prático para todas as idades. Agende sua aula experimental!">
+    <meta property="twitter:image" content="https://andersonviolao.com/img/image-perfil.jpg">
+
+        <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23dc2626' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M9 18V5l12-2v13'/></svg>">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://andersonviolao.com/">
+
+    <!-- Schema.org markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MusicSchool",
+      "name": "Anderson - Professor de Violão",
+      "description": "Aulas de violão online e presenciais em Patos-PB",
+      "url": "https://andersonviolao.com/",
+      "telephone": "+55-83-98363-3906",
+      "email": "anderson.music.work@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Patos",
+        "addressRegion": "PB",
+        "addressCountry": "BR"
+      },
+      "offers": {
+        "@type": "Offer",
+        "description": "Aulas de violão para iniciantes"
+      }
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body class="bg-white text-gray-900">
+    <!-- Header -->
+    <header class="fixed w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <div
+                        class="w-10 h-10 bg-gradient-to-br from-red-600 to-orange-600 rounded-lg flex items-center justify-center">
+                        <i data-lucide="music" class="text-white w-5 h-5"></i>
+                    </div>
+                   <a href="index.html"> <span class="text-xl font-bold text-gray-900">Anderson Music</span></a>
+                </div>
+
+                <!-- Menu Desktop -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="text-gray-600 hover:text-gray-900 transition-colors font-medium">Início</a>
+                    <a href="#sobre" class="text-gray-600 hover:text-gray-900 transition-colors font-medium">Sobre</a>
+                    <a href="#metodologia"
+                        class="text-gray-600 hover:text-gray-900 transition-colors font-medium">Metodologia</a>
+                    <a href="#planos" class="text-gray-600 hover:text-gray-900 transition-colors font-medium">Planos</a>
+                    <a href="#faq" class="text-gray-600 hover:text-gray-900 transition-colors font-medium">FAQ</a>
+                </nav>
+
+                <div class="flex items-center space-x-3">
+                    <!-- Botão Contato Corrigido -->
+                    <a href="#contato"
+                        class="bg-gradient-to-br from-red-600 to-orange-600 text-white px-6 py-2.5 rounded-lg hover:from-red-700 hover:to-orange-700 transition-all shadow-md font-medium">
+                        Contato
+                    </a>
+
+                    <!-- Botão Menu Mobile -->
+                    <button class="md:hidden p-2" onclick="toggleMobileMenu()">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu Mobile -->
+        <div class="mobile-menu fixed inset-0 z-40 md:hidden" style="background-color: white;">
+            <div class="min-h-full bg-white p-6">
+                <div class="flex justify-between items-center mb-8">
+                    <div class="flex items-center space-x-3">
+                        <div
+                            class="w-10 h-10 bg-gradient-to-br from-red-600 to-orange-600 rounded-lg flex items-center justify-center">
+                            <i data-lucide="music" class="text-white w-5 h-5"></i>
+                        </div>
+                        <span class="text-xl font-bold text-gray-900">Anderson Music</span>
+                    </div>
+                    <button onclick="toggleMobileMenu()" class="p-2">
+                        <i data-lucide="x" class="w-6 h-6 text-gray-700"></i>
+                    </button>
+                </div>
+
+                <nav class="space-y-4">
+                    <a href="#inicio"
+                        class="block text-lg font-medium text-gray-900 hover:text-red-600 transition-colors py-3"
+                        onclick="toggleMobileMenu()">Início</a>
+                    <a href="#sobre"
+                        class="block text-lg font-medium text-gray-900 hover:text-red-600 transition-colors py-3"
+                        onclick="toggleMobileMenu()">Sobre</a>
+                    <a href="#metodologia"
+                        class="block text-lg font-medium text-gray-900 hover:text-red-600 transition-colors py-3"
+                        onclick="toggleMobileMenu()">Metodologia</a>
+                    <a href="#planos"
+                        class="block text-lg font-medium text-gray-900 hover:text-red-600 transition-colors py-3"
+                        onclick="toggleMobileMenu()">Planos</a>
+                    <a href="#faq"
+                        class="block text-lg font-medium text-gray-900 hover:text-red-600 transition-colors py-3"
+                        onclick="toggleMobileMenu()">FAQ</a>
+                    <a href="#contato"
+                        class="block text-lg font-medium text-gray-900 hover:text-red-600 transition-colors py-3"
+                        onclick="toggleMobileMenu()">Contato</a>
+                </nav>
+
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-32 pb-20 md:pt-40 md:pb-28">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="fade-in text-center lg:text-left">
+                    <div
+                        class="inline-flex items-center space-x-2 bg-red-50 text-red-700 px-4 py-2 rounded-full text-sm font-medium mb-8">
+                        <i data-lucide="zap" class="w-4 h-4"></i>
+                        <span>Aulas Online e Presenciais</span>
+                    </div>
+
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+                        Aprenda Violão do
+                        <span class="gradient-text block mt-2">Zero, no seu ritmo.</span>
+                    </h1>
+
+                    <p class="text-xl text-gray-600 mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        Professor Anderson - Ensino violão de forma prática e descomplicada para todas as idades. Sua
+                        jornada musical começa aqui!
+                    </p>
+
+                    <div class="flex justify-center lg:justify-start mb-8">
+                        <a href="https://wa.me/558398363906?text=Olá,%20Anderson!%20Vim%20através%20do%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20seu%20trabalho."
+                            target="_blank"
+                            class="bg-gradient-to-br from-red-600 to-orange-600 text-white px-8 py-4 rounded-lg hover:from-red-700 hover:to-orange-700 transition-all shadow-lg font-medium text-lg flex items-center justify-center no-underline">
+                            <i data-lucide="guitar" class="w-5 h-5 mr-2"></i>
+                            Quero Saber Mais
+                        </a>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4 text-sm text-gray-500 max-w-md mx-auto lg:mx-0">
+                        <div class="flex items-center space-x-2">
+                            <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i>
+                            <span>Patos-PB e Online</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i data-lucide="message-circle" class="w-4 h-4 text-purple-500"></i>
+                            <span>Feedback a cada aula</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i data-lucide="users" class="w-4 h-4 text-blue-500"></i>
+                            <span>Para todas as idades</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i data-lucide="award" class="w-4 h-4 text-amber-500"></i>
+                            <span>Método Prático</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fade-in order-first lg:order-last">
+                    <div class="max-w-md mx-auto lg:mx-0">
+                        <img src="/img/image-perfil.jpg" alt="Professor Anderson - Professor de Violão"
+                            class="w-full rounded-2xl shadow-lg object-contain">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="section-padding bg-gray-50 fade-in">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Professor Anderson</h2>
+                    <p class="text-lg text-gray-600">Músico apaixonado compartilhando conhecimento</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="text-center fade-in">
+                        <div class="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="music-2" class="text-red-600 w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Experiência Musical</h3>
+                        <p class="text-gray-600">+2 anos como músico atuante e +10 anos com vivência prática em diversos
+                            estilos musicais.</p>
+                    </div>
+
+                    <div class="text-center fade-in">
+                        <div class="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="heart" class="text-orange-600 w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Paixão por Ensinar</h3>
+                        <p class="text-gray-600">Dedicação total em ajudar cada aluno a descobrir seu potencial musical.
+                        </p>
+                    </div>
+
+                    <div class="text-center fade-in">
+                        <div class="w-20 h-20 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="trending-up" class="text-amber-600 w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Ensino Personalizado</h3>
+                        <p class="text-gray-600">Aulas adaptadas ao ritmo e objetivos de cada aluno.</p>
+                    </div>
+                </div>
+
+                <div class="mt-12 text-center fade-in">
+                    <p class="text-gray-600 max-w-2xl mx-auto">
+                        "Comecei minha jornada no violão há alguns anos e entendi as dificuldades que todo iniciante
+                        enfrenta.
+                        Por isso, desenvolvi um método que torna o aprendizado mais natural e divertido."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- metodologia Section -->
+    <section id="metodologia" class="fade-in section-padding">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Como Você Vai Aprender</h2>
+                    <p class="text-lg text-gray-600">Método prático focado em resultados reais</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="fade-in">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <span class="text-red-600 font-bold">1</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Fundamentos Sólidos</h3>
+                                <p class="text-gray-600">Aprenda a base do violão de forma correta desde o início.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fade-in">
+                        <div class="flex items-start space-x-4">
+                            <div
+                                class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <span class="text-orange-600 font-bold">2</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Repertório Prático</h3>
+                                <p class="text-gray-600">Toque músicas que você gosta desde as primeiras aulas.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fade-in">
+                        <div class="flex items-start space-x-4">
+                            <div
+                                class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <span class="text-amber-600 font-bold">3</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Flexibilidade Total</h3>
+                                <p class="text-gray-600">Aulas online ou presenciais em Patos-PB, conforme sua
+                                    preferência.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fade-in">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <span class="text-red-600 font-bold">4</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Suporte Contínuo</h3>
+                                <p class="text-gray-600">Tire suas dúvidas mesmo fora do horário das aulas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- O que você vai aprender -->
+    <section class="section-padding bg-gray-50">
+        <div class="fade-in container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">O Que Você Vai Aprender</h2>
+                    <p class="text-lg text-gray-600">Conteúdo completo para sua evolução musical</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="fade-in">
+                        <div class="plan-card rounded-2xl p-8 h-full">
+                            <div class="flex items-center mb-6">
+                                <div
+                                    class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0 mr-4">
+                                    <i data-lucide="music" class="text-red-600 w-6 h-6"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900">Fundamentos Essenciais</h3>
+                            </div>
+                            <ul class="space-y-4">
+                                <li class="flex items-start">
+                                    <i data-lucide="check-circle"
+                                        class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0"></i>
+                                    <span class="text-gray-600">Afinar o violão corretamente</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-lucide="check-circle"
+                                        class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0"></i>
+                                    <span class="text-gray-600">Posicionamento das mãos</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-lucide="check-circle"
+                                        class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0"></i>
+                                    <span class="text-gray-600">Primeiros acordes básicos</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-lucide="check-circle"
+                                        class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0"></i>
+                                    <span class="text-gray-600">Leitura de cifras</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="fade-in">
+                        <div class="plan-card rounded-2xl p-8 h-full">
+                            <div class="flex items-center mb-6">
+                                <div
+                                    class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0 mr-4">
+                                    <i data-lucide="guitar" class="text-orange-600 w-6 h-6"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900">Técnica e Prática</h3>
+                            </div>
+                            <ul class="space-y-4">
+                                <li class="flex items-start">
+                                    <i data-lucide="check-circle"
+                                        class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0"></i>
+                                    <span class="text-gray-600">Batidas e ritmos variados</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-lucide="check-circle"
+                                        class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0"></i>
+                                    <span class="text-gray-600">Transição entre acordes</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-lucide="check-circle"
+                                        class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0"></i>
+                                    <span class="text-gray-600">Dedilhados básicos</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-lucide="check-circle"
+                                        class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0"></i>
+                                    <span class="text-gray-600">Desenvolvimento de repertório</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12 text-center fade-in">
+                    <div
+                        class="inline-flex items-center space-x-2 bg-red-50 text-red-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+                        <i data-lucide="zap" class="w-4 h-4"></i>
+                        <span>Resultados em poucas semanas</span>
+                    </div>
+                    <p class="text-gray-600 max-w-2xl mx-auto">
+                        Com nosso método prático e direto, você começará a tocar suas primeiras músicas
+                        em poucas semanas, independentemente da sua idade ou experiência anterior.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como funcionam as aulas -->
+    <section class="section-padding">
+        <div class="fade-in container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Como Funcionam as Aulas</h2>
+                    <p class="text-lg text-gray-600">Processo simples e organizado para seu aprendizado</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="fade-in">
+                        <div class="plan-card rounded-2xl p-8 h-full">
+                            <div class="flex items-center mb-6">
+                                <div
+                                    class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0 mr-4">
+                                    <i data-lucide="calendar" class="text-amber-600 w-6 h-6"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900">Agendamento</h3>
+                            </div>
+                            <ol class="space-y-4 text-gray-600 list-decimal list-inside">
+                                <li>Agendamos a primeira aula (pagamento no início do ciclo)</li>
+                                <li>Você escolhe entre 2, 4 ou 8 aulas mensais</li>
+                                <li>Definimos os horários que se encaixam na sua rotina</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="fade-in">
+                        <div class="plan-card rounded-2xl p-8 h-full">
+                            <div class="flex items-center mb-6">
+                                <div
+                                    class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0 mr-4">
+                                    <i data-lucide="message-circle" class="text-red-600 w-6 h-6"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900">Acompanhamento</h3>
+                            </div>
+                            <ul class="space-y-4 text-gray-600">
+                                <li class="flex items-start">
+                                    <i data-lucide="check-circle"
+                                        class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0"></i>
+                                    <span>Acompanhamento via WhatsApp</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-lucide="check-circle"
+                                        class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0"></i>
+                                    <span>Correções por áudio e vídeo</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-lucide="check-circle"
+                                        class="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0"></i>
+                                    <span>Playlists personalizadas</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12 text-center fade-in">
+                    <a href="https://wa.me/558398363906" target="_blank"
+                        class="bg-gradient-to-br from-red-600 to-orange-600 text-white px-8 py-4 rounded-lg hover:from-red-700 hover:to-orange-700 transition-all shadow-lg font-medium text-lg inline-flex items-center">
+                        <i data-lucide="calendar" class="w-5 h-5 mr-2"></i>
+                        Agendar Aula Experimental
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plans Section -->
+    <section id="planos" class="section-padding bg-gray-50">
+        <div class="fade-in container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Planos de Aula</h2>
+                    <p class="text-lg text-gray-600">Escolha o plano ideal para sua jornada musical</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <!-- Plano Básico -->
+                    <div class="plan-card rounded-2xl p-8 fade-in">
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Essencial</h3>
+                            <div class="flex items-baseline justify-center">
+                                <span class="text-4xl font-bold text-gray-900">R$ 100</span>
+                                <span class="text-gray-600 ml-2">/mês</span>
+                            </div>
+                        </div>
+
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-center">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                                <span>2 aulas por mês</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                                <span>Playlist de exercícios básicos</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                                <span>Online ou Presencial</span>
+                            </li>
+                            <li class="flex items-center text-gray-400">
+                                <i data-lucide="x" class="w-5 h-5 mr-3"></i>
+                                <span>Suporte entre aulas</span>
+                            </li>
+                            <li class="flex items-center text-gray-400">
+                                <i data-lucide="x" class="w-5 h-5 mr-3"></i>
+                                <span>Correção por áudio/vídeo</span>
+                            </li>
+                        </ul>
+
+                        <a href="https://wa.me/558398363906?text=Oi%20Anderson!%20Tudo%20bem?%20Tenho%20interesse%20no%20Plano%20Essencial%20de%20R$100/mês%20(2%20aulas%20por%20mês).%20Pode%20me%20explicar%20como%20funciona?"
+                            target="_blank">
+                            <button
+                                class="w-full bg-gray-800 text-white py-3 rounded-lg hover:bg-gray-900 transition-colors font-medium">
+                                Escolher Plano
+                            </button>
+                        </a>
+                    </div>
+
+                    <!-- Plano Intermediário -->
+                    <div class="plan-card featured rounded-2xl p-8 fade-in">
+                        <div class="text-center mb-6">
+                            <div
+                                class="inline-block bg-red-500 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
+                                Mais Procurado
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Completo</h3>
+                            <div class="flex items-baseline justify-center">
+                                <span class="text-4xl font-bold text-gray-900">R$ 180</span>
+                                <span class="text-gray-600 ml-2">/mês</span>
+                            </div>
+                        </div>
+
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-center">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                                <span>4 aulas por mês</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                                <span>Suporte por WhatsApp entre aulas</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                                <span>Online ou Presencial</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                                <span>Playlist personalizada + metas</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                                <span>Correção de técnica por áudio</span>
+                            </li>
+                        </ul>
+                        <a href="https://wa.me/558398363906?text=Oi%20Anderson!%20Tudo%20bem?%20Vi%20o%20Plano%20Completo%20(R$180/mês)%20no%20seu%20site%20e%20quero%20saber%20mais%20sobre%20as%204%20aulas%20mensais%20e%20o%20suporte%20por%20WhatsApp."
+                            target="_blank">
+                            <button
+                                class="w-full bg-red-600 text-white py-3 rounded-lg hover:bg-red-700 transition-colors font-medium">
+                                Escolher Plano
+                            </button>
+                        </a>
+                    </div>
+
+                    <!-- Plano Avançado -->
+                    <div class="plan-card rounded-2xl p-8 fade-in">
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Premium</h3>
+                            <div class="flex items-baseline justify-center">
+                                <span class="text-4xl font-bold text-gray-900">R$ 260</span>
+                                <span class="text-gray-600 ml-2">/mês</span>
+                            </div>
+                        </div>
+
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-center">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                                <span>8 aulas por mês</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                                <span>Suporte ilimitado por WhatsApp</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                                <span>Online ou Presencial</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                                <span>Plano de estudos personalizado</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                                <span>Feedback detalhado/pesonalizado</span>
+                            </li>
+                        </ul>
+
+                        <a href="https://wa.me/558398363906?text=Oi%20Anderson!%20Vi%20seu%20Plano%20Premium%20(R$260/mês)%20e%20achei%20perfeito!%20Quero%20saber%20como%20funcionam%20as%208%20aulas%20e%20o%20plano%20de%20estudos%20personalizado."
+                            target="_blank">
+                            <button
+                                class="w-full bg-gray-800 text-white py-3 rounded-lg hover:bg-gray-900 transition-colors font-medium">
+                                Escolher Plano
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="text-center mt-12 fade-in">
+                    <p class="text-gray-600 mb-4">💫 <strong>Aula experimental</strong> para conhecer o método
+                    </p>
+                    <a href="https://wa.me/558398363906?text=Olá%20Professor%20Anderson!%20Gostaria%20de%20agendar%20uma%20aula."
+                        target="_blank">
+                        <button
+                            class="border border-red-600 text-red-600 px-8 py-3 rounded-lg hover:bg-red-600 hover:text-white transition-all font-medium">
+                            Agendar Aula
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="fade-in section-padding bg-white">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Dúvidas Frequentes</h2>
+                <p class="text-lg text-gray-600">Antes de começar, veja as respostas para as perguntas mais comuns dos
+                    alunos</p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- Pergunta -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button
+                        class="w-full flex justify-between items-center p-5 text-left text-lg font-medium text-gray-900 hover:bg-gray-50 transition"
+                        onclick="toggleFAQ(this)">
+                        Preciso ter um violão para começar?
+                        <i data-lucide="chevron-down" class="w-5 h-5 transition-transform"></i>
+                    </button>
+                    <div class="max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="p-5 text-gray-600">O ideal é ter o seu instrumento, mas se ainda não tiver, posso te
+                            orientar na escolha do violão ideal e como começar com o básico até adquirir o seu.</p>
+                    </div>
+                </div>
+
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button
+                        class="w-full flex justify-between items-center p-5 text-left text-lg font-medium text-gray-900 hover:bg-gray-50 transition"
+                        onclick="toggleFAQ(this)">
+                        As aulas são presenciais ou online?
+                        <i data-lucide="chevron-down" class="w-5 h-5 transition-transform"></i>
+                    </button>
+                    <div class="max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="p-5 text-gray-600">Você escolhe: pode fazer presencialmente em Patos-PB ou online pelo
+                            WhatsApp/Google Meet com a mesma qualidade e atenção individual.</p>
+                    </div>
+                </div>
+
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button
+                        class="w-full flex justify-between items-center p-5 text-left text-lg font-medium text-gray-900 hover:bg-gray-50 transition"
+                        onclick="toggleFAQ(this)">
+                        As aulas têm horário fixo?
+                        <i data-lucide="chevron-down" class="w-5 h-5 transition-transform"></i>
+                    </button>
+                    <div class="max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="p-5 text-gray-600">Os horários são flexíveis e combinados conforme sua rotina. Sempre
+                            busco ajustar o melhor dia e hora pra você não perder o ritmo.</p>
+                    </div>
+                </div>
+
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button
+                        class="w-full flex justify-between items-center p-5 text-left text-lg font-medium text-gray-900 hover:bg-gray-50 transition"
+                        onclick="toggleFAQ(this)">
+                        Quanto tempo leva pra aprender a tocar?
+                        <i data-lucide="chevron-down" class="w-5 h-5 transition-transform"></i>
+                    </button>
+                    <div class="max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="p-5 text-gray-600">Depende da sua dedicação, mas com prática constante e o método
+                            certo, em poucas semanas você já toca suas primeiras músicas.</p>
+                    </div>
+                </div>
+
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button
+                        class="w-full flex justify-between items-center p-5 text-left text-lg font-medium text-gray-900 hover:bg-gray-50 transition"
+                        onclick="toggleFAQ(this)">
+                        Posso mudar de plano depois?
+                        <i data-lucide="chevron-down" class="w-5 h-5 transition-transform"></i>
+                    </button>
+                    <div class="max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="p-5 text-gray-600">Sim! Você pode alterar o plano a qualquer momento, conforme sua
+                            disponibilidade ou objetivos musicais.</p>
+                    </div>
+                </div>
+
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button
+                        class="w-full flex justify-between items-center p-5 text-left text-lg font-medium text-gray-900 hover:bg-gray-50 transition"
+                        onclick="toggleFAQ(this)">
+                        E se eu faltar uma aula?
+                        <i data-lucide="chevron-down" class="w-5 h-5 transition-transform"></i>
+                    </button>
+                    <div class="max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="p-5 text-gray-600">As reposições são possíveis, desde que avisadas com antecedência. O
+                            importante é manter a constância!</p>
+                    </div>
+                </div>
+
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button
+                        class="w-full flex justify-between items-center p-5 text-left text-lg font-medium text-gray-900 hover:bg-gray-50 transition"
+                        onclick="toggleFAQ(this)">
+                        Tem material de apoio?
+                        <i data-lucide="chevron-down" class="w-5 h-5 transition-transform"></i>
+                    </button>
+                    <div class="max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="p-5 text-gray-600">Sim! Você recebe playlists personalizadas, PDFs, vídeos e
+                            exercícios práticos para reforçar o que aprende nas aulas.</p>
+                    </div>
+                </div>
+
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button
+                        class="w-full flex justify-between items-center p-5 text-left text-lg font-medium text-gray-900 hover:bg-gray-50 transition"
+                        onclick="toggleFAQ(this)">
+                        Tem idade mínima ou máxima?
+                        <i data-lucide="chevron-down" class="w-5 h-5 transition-transform"></i>
+                    </button>
+                    <div class="max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="p-5 text-gray-600">Não! Ensino crianças, adolescentes, adultos e idosos. A música é
+                            para todos, e o método é adaptado à sua idade e ritmo.</p>
+                    </div>
+                </div>
+
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button
+                        class="w-full flex justify-between items-center p-5 text-left text-lg font-medium text-gray-900 hover:bg-gray-50 transition"
+                        onclick="toggleFAQ(this)">
+                        Quais as formas de pagamento?
+                        <i data-lucide="chevron-down" class="w-5 h-5 transition-transform"></i>
+                    </button>
+                    <div class="max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="p-5 text-gray-600">aceito PIX e dinheiro. O pagamento é feito no ato da primeira aula,
+                            e o plano inclui 4 semanas de acompanhamento. Ao final desse ciclo, o pagamento pode ser
+                            renovado mensalmente para continuar o acompanhamento.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gray-50 fade-in">
+        <div class="container mx-auto px-6 text-center max-w-5xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">O que os alunos dizem</h2>
+            <p class="text-lg text-gray-600 mb-12">Veja a experiência de quem já aprendeu comigo</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white shadow-md rounded-2xl p-6">
+                    <p class="text-gray-700 italic mb-4">"Nunca imaginei que aprender violão fosse tão leve. Em poucas
+                        aulas já toquei minha primeira música!"</p>
+                    <h4 class="font-bold text-gray-900">Lucas, 22 anos</h4>
+                </div>
+
+                <div class="bg-white shadow-md rounded-2xl p-6">
+                    <p class="text-gray-700 italic mb-4">"O Anderson explica de um jeito fácil e motivador. Cada aula é
+                        uma conquista!"</p>
+                    <h4 class="font-bold text-gray-900">Marina, 34 anos</h4>
+                </div>
+
+                <div class="bg-white shadow-md rounded-2xl p-6">
+                    <p class="text-gray-700 italic mb-4">"Comecei sem saber nada e hoje toco na igreja. Recomendo
+                        demais!"</p>
+                    <h4 class="font-bold text-gray-900">José, 45 anos</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="section-padding bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Vamos Começar Sua Jornada Musical?</h2>
+                <p class="text-lg text-gray-600 mb-12">
+                    Escolha a melhor forma de entrar em contato e agende sua aula experimental
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                    <!-- WhatsApp -->
+                    <div class="plan-card rounded-2xl p-8 text-center">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893-.001-3.189-1.248-6.189-3.515-8.452" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">WhatsApp</h3>
+                        <p class="text-gray-600 mb-6">Resposta rápida e direta — retorno em até 24h dentro do horário
+                            comercial.</p>
+                        <a href="https://wa.me/558398363906?text=Olá,%20Anderson!%20Gostaria%20de%20saber%20mais%20sobre%20as%20aulas%20de%20violão."
+                            target="_blank"
+                            class="inline-flex items-center bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600 transition-all shadow-md font-medium">
+                            <i data-lucide="message-circle" class="w-5 h-5 mr-2"></i>
+                            Enviar Mensagem
+                        </a>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="plan-card rounded-2xl p-8 text-center">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="mail" class="text-blue-600 w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">E-mail</h3>
+                        <p class="text-gray-600 mb-2">anderson.music.work@gmail.com</p>
+                        <p class="text-gray-500 text-sm mb-6">Resposta em até 24h</p>
+                        <a href="mailto:anderson.music.work@gmail.com?subject=Aulas de Violão&body=Olá Anderson, gostaria de saber mais sobre suas aulas de violão!"
+                            class="inline-flex items-center bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-all shadow-md font-medium">
+                            <i data-lucide="mail" class="w-5 h-5 mr-2"></i>
+                            Enviar E-mail
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Informações de Contato -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center mb-12">
+                    <div class="flex items-center justify-center space-x-3">
+                        <i data-lucide="map-pin" class="text-red-600 w-5 h-5"></i>
+                        <span class="text-gray-600">Patos - PB</span>
+                    </div>
+                    <div class="flex items-center justify-center space-x-3">
+                        <i data-lucide="clock" class="text-orange-600 w-5 h-5"></i>
+                        <span class="text-gray-600">Segunda a Sábado</span>
+                    </div>
+                    <div class="flex items-center justify-center space-x-3">
+                        <i data-lucide="zap" class="text-amber-600 w-5 h-5"></i>
+                        <span class="text-gray-600">Resposta em até 2h</span>
+                    </div>
+                </div>
+
+                <!-- CTA Principal -->
+                <div class="bg-gradient-to-br from-red-600 to-orange-600 rounded-2xl p-8 text-white">
+                    <h3 class="text-2xl font-bold mb-4">🎸 Aula Experimental</h3>
+                    <p class="mb-6 opacity-90">Experimente uma aula sem compromisso e veja como é fácil aprender violão
+                    </p>
+                    <a href="https://wa.me/558398363906?text=Olá,%20Anderson!%20Gostaria%20de%20agendar%20uma%20aula%20experimental%20."
+                        target="_blank"
+                        class="inline-flex items-center bg-white text-red-600 px-8 py-4 rounded-lg hover:bg-gray-100 transition-all font-bold text-lg shadow-lg">
+                        <i data-lucide="calendar" class="w-5 h-5 mr-2"></i>
+                        Agendar Aula Grátis
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Urgency Section -->
+    <section class="bg-gradient-to-br from-red-600 to-orange-600 text-white py-16 text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">As vagas para novembro estão quase esgotadas 🎸</h2>
+            <p class="text-lg mb-8 opacity-90">
+                Garanta sua vaga agora e comece suas aulas ainda este mês.
+                A música não espera — seu novo talento também não deve esperar.
+            </p>
+            <a href="https://wa.me/558398363906?text=Oi,%20Anderson!%20Quero%20garantir%20minha%20vaga%20para%20as%20aulas%20de%20violão!"
+                target="_blank"
+                class="bg-white text-red-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all shadow-md">
+                Reservar Minha Vaga
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div
+                            class="w-10 h-10 bg-gradient-to-br from-red-600 to-orange-600 rounded-lg flex items-center justify-center">
+                            <i data-lucide="music" class="text-white w-5 h-5"></i>
+                        </div>
+                        <span class="text-lg font-bold">Anderson Violão</span>
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        Aulas de violão presenciais e online com método prático e acolhedor.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-lg mb-6">Navegação</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#inicio" class="hover:text-white transition">Início</a></li>
+                        <li><a href="#sobre" class="hover:text-white transition">Sobre</a></li>
+                        <li><a href="#planos" class="hover:text-white transition">Planos</a></li>
+                        <li><a href="#faq" class="hover:text-white transition">FAQ</a></li>
+                        <li><a href="#contato" class="hover:text-white transition">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-lg mb-6">Contato</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><i data-lucide="phone" class="inline w-4 h-4 mr-2"></i> (83) 9 9836-3906</li>
+                        <li><i data-lucide="map-pin" class="inline w-4 h-4 mr-2"></i> Patos - PB</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-lg mb-6">Horários</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li>Segunda a Sexta: 8h às 20h</li>
+                        <li>Sábado: 8h às 14h</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Anderson - Professor de Violão. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante do WhatsApp -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/558398363906?text=Olá,%20Anderson!%20Gostaria%20de%20saber%20mais%20sobre%20as%20aulas%20de%20violão."
+            target="_blank"
+            class="bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-105 group">
+            <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893-.001-3.189-1.248-6.189-3.515-8.452" />
+            </svg>
+        </a>
+    </div>
+
+    <script src="script.js">
+       
+    </script>
+</body>
+
+</html>
